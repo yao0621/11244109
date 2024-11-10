@@ -1,13 +1,12 @@
-*{
+* {
     box-sizing: border-box;
 }
-body{
+body {
     background-color: floralwhite;
     margin: 0px;
-
 }
 
-header{
+header {
     background-color: #9d6381;
     color: white;
     text-align: center;
@@ -15,171 +14,169 @@ header{
     padding: 20px;
 }
 
-nav{
+nav {
     background-color: #e5cad4;
     text-align: center;
-    font-family:Arial;
+    font-family: Arial;
 }
-nav a{
-padding: 14px 16px;
-display: inline-block;
-color: green;
+nav a {
+    padding: 14px 16px;
+    display: inline-block;
+    color: green;
 }
-nav a:hover
-{
+nav a:hover {
+   
     background-color: #cda8b8;
     color: white;
+    text-align: center;
+    margin: 80px;
+    padding: 20px;
+    width: 100%; /* 確保背景填滿頁面寬度 */
 }
-footer{
+footer {
     background-color: #cda8b8;
     color: #444444;
     text-align: center;
     padding: 10px;
+    width: 100%;
 }
-main{
+main {
     padding: 20px;
 }
-.card/*三個區塊*/
-{
+.card {
     background-color: white;
-    
     margin: 20px 10px;
-    border-radius: 15px;/*邊界圓弧*/
+    border-radius: 15px;
     background-image: url(image/card_img.jpg);
     background-size: cover;
 }
 
-.card.card1.card2{
-    text-align: center;
-}
-
-
-article{
+article {
     float: left;
     width: 73%;
 }
-aside
-{
-    float:right;
+aside {
+    float: right;
     width: 25%;
     text-align: center;
 }
 
-  .card {
-    max-width: 800px;          /* Max width for the card to ensure it doesn't stretch too wide */
-    margin: 0 auto;            /* Centers the card horizontally */
-    padding: 20px;             /* Space inside the card */
-    border: 1px solid #ddd;    /* Light border around the card */
-    border-radius: 8px;        /* Rounded corners for the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow around the card */
-    background-color: #fff;    /* White background for the card */
-  }
-  
-  /* --- Card Title --- */
-  .card h1 {
-    margin: 0;
-    text-align: center;         /* Center-align the title */
-    font-size: 24px;            /* Font size for the title */
-    font-weight: bold;          /* Make the title bold */
-  }
-  
-  /* --- Skills Section (Container for skill items) --- */
-  .skills {
-    display: flex;              /* Flexbox layout for horizontal arrangement */
-    justify-content: center;    /* Center the items horizontally */
-    gap: 20px;                  /* Space between skill items */
-    align-items: center;        /* Vertically center items */
-    margin-top: 20px;           /* Space above the skills section */
-  }
-  
-  /* --- Individual Skill Item --- */
-  .ll {
-    text-align: center;         /* Center the text inside each skill item */
-    padding: 10px;              /* Padding inside each skill item */
-    border: 1px solid #ddd;     /* Light border around each skill item */
-    border-radius: 8px;         /* Rounded corners for each skill item */
-    width: 120px;               /* Set a fixed width for consistent alignment */
-    background-color: #f9f9f9;  /* Light background color for each skill item */
-    font-size: 14px;            /* Font size for the text */
-    margin: 0;                  /* Remove margin around each skill item */
-  }
-  
-  /* --- Skill Icon (Image Styling) --- */
-  .skills img {
-    width: 100px;               /* Set the width of the images */
-    height: 100px;              /* Set the height of the images */
-    border-radius: 50%;         /* Make the images circular */
-    margin-bottom: 10px;        /* Space between the image and the text */
-  }
-  
-  .pp {
-    text-align: center;
-    display: flex; 
-    justify-content: center; 
+/* 技能區塊 */
+.skills {
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    background-color: #f0f0f0; /* Light grey background for the entire container */
-    padding: 20px; /* Padding around the content */
-    border-radius: 8px; /* Rounded corners for the container */
-  }
-  
-  .pp img {
-    width: 150px;
-    height: 200px;
-    border-radius: 8px;
-  }
-  
-  .ppp {
+    align-items: center;
+    margin-top: 20px;
+}
+
+.skills img {
+    width: 80px;
+    height: 80px;
+    border-radius: 15%;
+    margin-bottom: 10px;
+}
+
+.ll {
     text-align: center;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 180px; /* Set a fixed width for consistent alignment */
-    background-color: #ffffff; /* White background for each item */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle 3D effect */
-  }
-  
-  .ppp p {
+    width: 130px;
+    background-color: #f9f9f9;
+    font-size: 14px;
     margin: 0;
-    font-size: 16px;
-  }
-  
-  .card2 {
+}
+
+/* 個人經歷區塊 */
+.pp {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  flex-wrap: wrap; /* 讓卡片換行排列 */
+}
+
+.pp img {
+  width: 150px; /* 固定寬度 */
+  height: 120px; /* 固定高度 */
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.ppp {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px; /* 固定寬度，確保卡片大小一致 */
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ppp img {
+  margin-bottom: 10px;
+}
+
+/* 聯絡資訊區塊 */
+.card2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 20px;
-    padding: 20px; /* Add padding around the entire card */
-    border: 2px solid #ccc; /* Border around the entire card */
-    background-color: #f9f9f9; /* Background color for the card */
-    border-radius: 8px; /* Rounded corners for the card */
-  }
-  
-  .ccc {
+    padding: 20px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.ccc {
     margin: 10px 0;
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 10px;
-    border: 1px solid #ddd; /* Border around each contact info item */
-    background-color: #fff; /* White background for each contact item */
-    border-radius: 4px; /* Slightly rounded corners for each contact item */
-  }
-  
-  .ccc img {
-    margin-right: 15px; /* Adds space between the icon and the text */
-    width: 24px; /* Set a fixed size for the icons */
-    height: 24px;
-    border-radius: 15px;/*邊界圓弧*/
-  }
-  
-  .ccc span {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 75%;
+    gap: 10px;
+}
+
+.ccc img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.ccc span {
     font-size: 16px;
     font-weight: bold;
-  }
+}
+
+.about-me {
+  text-align: center;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.profile-pic img {
+  width: 150px;            /* 調整頭貼圖片大小 */
+  heigAht: 150px;
+  border-radius: 50%;      /* 圓形圖片 */
+  object-fit: cover;       /* 圖片裁剪以適應容器 */
+  border: 2px solid #ddd;  /* 增加邊框 */
   
-  .ccc p {
-    margin: 0;
-    font-size: 16px;
-  }
-  
+}
