@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: floralwhite;
+    margin: 0px;
+
+}
+
+header{
+    background-color: #9d6381;
+    color: white;
+    text-align: center;
+    margin: 80px;
+    padding: 20px;
+}
+
+nav{
+    background-color: #e5cad4;
+    text-align: center;
+    font-family:Arial;
+}
+nav a{
+padding: 14px 16px;
+display: inline-block;
+color: green;
+}
+nav a:hover
+{
+    background-color: #cda8b8;
+    color: white;
+}
+footer{
+    background-color: #cda8b8;
+    color: #444444;
+    text-align: center;
+    padding: 10px;
+}
+main{
+    padding: 20px;
+}
+.card/*三個區塊*/
+{
+    background-color: white;
+    
+    margin: 20px 10px;
+    border-radius: 15px;/*邊界圓弧*/
+    background-image: url(image/card_img.jpg);
+    background-size: cover;
+}
+
+.card.card1.card2{
+    text-align: center;
+}
+
+
+article{
+    float: left;
+    width: 73%;
+}
+aside
+{
+    float:right;
+    width: 25%;
+    text-align: center;
+}
+
+  .card {
+    max-width: 800px;          /* Max width for the card to ensure it doesn't stretch too wide */
+    margin: 0 auto;            /* Centers the card horizontally */
+    padding: 20px;             /* Space inside the card */
+    border: 1px solid #ddd;    /* Light border around the card */
+    border-radius: 8px;        /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow around the card */
+    background-color: #fff;    /* White background for the card */
+  }
+  
+  /* --- Card Title --- */
+  .card h1 {
+    margin: 0;
+    text-align: center;         /* Center-align the title */
+    font-size: 24px;            /* Font size for the title */
+    font-weight: bold;          /* Make the title bold */
+  }
+  
+  /* --- Skills Section (Container for skill items) --- */
+  .skills {
+    display: flex;              /* Flexbox layout for horizontal arrangement */
+    justify-content: center;    /* Center the items horizontally */
+    gap: 20px;                  /* Space between skill items */
+    align-items: center;        /* Vertically center items */
+    margin-top: 20px;           /* Space above the skills section */
+  }
+  
+  /* --- Individual Skill Item --- */
+  .ll {
+    text-align: center;         /* Center the text inside each skill item */
+    padding: 10px;              /* Padding inside each skill item */
+    border: 1px solid #ddd;     /* Light border around each skill item */
+    border-radius: 8px;         /* Rounded corners for each skill item */
+    width: 120px;               /* Set a fixed width for consistent alignment */
+    background-color: #f9f9f9;  /* Light background color for each skill item */
+    font-size: 14px;            /* Font size for the text */
+    margin: 0;                  /* Remove margin around each skill item */
+  }
+  
+  /* --- Skill Icon (Image Styling) --- */
+  .skills img {
+    width: 100px;               /* Set the width of the images */
+    height: 100px;              /* Set the height of the images */
+    border-radius: 50%;         /* Make the images circular */
+    margin-bottom: 10px;        /* Space between the image and the text */
+  }
+  
+  .pp {
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    gap: 20px;
+    background-color: #f0f0f0; /* Light grey background for the entire container */
+    padding: 20px; /* Padding around the content */
+    border-radius: 8px; /* Rounded corners for the container */
+  }
+  
+  .pp img {
+    width: 150px;
+    height: 200px;
+    border-radius: 8px;
+  }
+  
+  .ppp {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 180px; /* Set a fixed width for consistent alignment */
+    background-color: #ffffff; /* White background for each item */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle 3D effect */
+  }
+  
+  .ppp p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px; /* Add padding around the entire card */
+    border: 2px solid #ccc; /* Border around the entire card */
+    background-color: #f9f9f9; /* Background color for the card */
+    border-radius: 8px; /* Rounded corners for the card */
+  }
+  
+  .ccc {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd; /* Border around each contact info item */
+    background-color: #fff; /* White background for each contact item */
+    border-radius: 4px; /* Slightly rounded corners for each contact item */
+  }
+  
+  .ccc img {
+    margin-right: 15px; /* Adds space between the icon and the text */
+    width: 24px; /* Set a fixed size for the icons */
+    height: 24px;
+    border-radius: 15px;/*邊界圓弧*/
+  }
+  
+  .ccc span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .ccc p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
